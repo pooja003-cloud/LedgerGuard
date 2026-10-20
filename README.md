@@ -70,7 +70,7 @@ The bridge ties out to $0 against an independent net revenue calculation. The fa
    - a product's monthly return rate above 1.5x expected
 3. **Excel:** gross-to-net bridge, pivot by retailer, returns reserve analysis and a one-page CFO dashboard.
 4. **Validation:** results were checked against the planted problems: 40 of 40 caught, 0 missed, 0 false alarms ([validation results](docs/validation_results.md)). See the limitations below for how to read this.
-5. **AI-assisted write-up:** a script turns the verified exceptions into structured briefs that Claude uses to draft the CFO commentary, a dispute email to Best Buy and a rebill request to Amazon. The AI only writes; it never calculates, and every draft is reviewed by a person ([how it works](docs/ai/README.md)).
+5. **AI-assisted write-up:** a script turns the verified exceptions into structured briefs that Claude uses to draft the CFO commentary, a dispute email to Best Buy and a rebill request to Amazon. The AI only writes; it never calculates. A script checks that every number in a draft appears in its brief, and every draft is reviewed by a person ([how it works](docs/ai/README.md)).
 
 ## Reproducibility
 
@@ -118,6 +118,7 @@ python src/03_export_to_excel.py   # build excel/LedgerGuard_Analysis_generated.
 python src/04_validate.py          # check results against the answer key
 python src/05_build_ai_brief.py    # build AI briefs in docs/ai/
 python src/06_make_charts.py       # draw docs/gross_to_net_waterfall.png
+python src/07_check_ai_drafts.py   # check AI drafts contain only numbers from their briefs
 ```
 
 The data generator uses a fixed random seed, so every run produces the same data. To explore the database, open `data/ledgerguard.db` in [DB Browser for SQLite](https://sqlitebrowser.org) and run the queries in `sql/01_analysis.sql`.
