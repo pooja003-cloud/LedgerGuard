@@ -25,7 +25,7 @@ Read the full write-up in the **[one-page CFO memo](docs/memo.md)**.
 
 ### Gross-to-net revenue bridge
 
-![Gross-to-net waterfall](docs/gross_to_net_waterfall.png)
+![Gross-to-net waterfall](docs/gross_to_net_bridge.png)
 
 | Line | Amount | % of contract value |
 |---|---|---|
@@ -117,7 +117,7 @@ python src/02_load_to_sqlite.py    # build data/ledgerguard.db with the exceptio
 python src/03_export_to_excel.py   # build excel/LedgerGuard_Analysis_generated.xlsx
 python src/04_validate.py          # check results against the answer key
 python src/05_build_ai_brief.py    # build AI briefs in docs/ai/
-python src/06_make_charts.py       # draw docs/gross_to_net_waterfall.png
+python src/06_make_charts.py       # draw docs/gross_to_net_bridge.png
 python src/07_check_ai_drafts.py   # check AI drafts contain only numbers from their briefs
 ```
 

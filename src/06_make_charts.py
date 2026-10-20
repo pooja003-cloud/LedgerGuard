@@ -3,7 +3,7 @@ LedgerGuard: Draw the gross-to-net waterfall chart
 ==================================================
 
 Builds the revenue bridge from data/ledgerguard.db and saves
-docs/gross_to_net_waterfall.png. Same figures as the Gross_to_Net sheet.
+docs/gross_to_net_bridge.png. Same figures as the Gross_to_Net sheet.
 
 Run:  python src/06_make_charts.py
 """
@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt   # noqa: E402
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = PROJECT_ROOT / "data" / "ledgerguard.db"
 VIEWS_SQL = PROJECT_ROOT / "sql" / "02_exceptions.sql"
-OUT_PATH = PROJECT_ROOT / "docs" / "gross_to_net_waterfall.png"
+OUT_PATH = PROJECT_ROOT / "docs" / "gross_to_net_bridge.png"
 
 TOTAL_COLOR = "#3D6CB3"     # blue: totals and subtotals
 DEDUCT_COLOR = "#B23A3A"    # red: deductions
