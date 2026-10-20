@@ -1,0 +1,2 @@
+# Count SQL files in the GitHub language bar (Linguist treats SQL as "data" by default)
+*.sql linguist-detectable=true

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+~$*.xlsx
+.ipynb_checkpoints/
+*.db-journal
+*.db-wal
+*.db-shm
+excel/*_generated.xlsx

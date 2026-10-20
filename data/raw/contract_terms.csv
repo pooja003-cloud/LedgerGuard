@@ -1,0 +1,10 @@
+Retailer,Product,Contract_Unit_Price,Max_Markdown_Pct,Max_Chargeback_Pct,Expected_Return_Rate
+BestBuy_US,AI_Laptop_14,850,0.08,0.03,0.02
+BestBuy_US,Gaming_Desktop_X,1300,0.08,0.03,0.015
+BestBuy_US,Chromebook_Edu,240,0.08,0.03,0.03
+Amazon_US,AI_Laptop_14,845,0.1,0.03,0.02
+Amazon_US,Gaming_Desktop_X,1290,0.1,0.03,0.015
+Amazon_US,Chromebook_Edu,235,0.1,0.03,0.03
+Costco_Wholesale,AI_Laptop_14,820,0.05,0.02,0.025
+Costco_Wholesale,Gaming_Desktop_X,1250,0.05,0.02,0.02
+Costco_Wholesale,Chromebook_Edu,230,0.05,0.02,0.035

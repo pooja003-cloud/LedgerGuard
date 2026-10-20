@@ -1,0 +1,41 @@
+Invoice_ID,Scenario,Description,Expected_Leakage_USD
+INV-100193,A_Double_Discount,15% promo applied twice; billed at 72.25% of contract price,268725.54
+INV-100219,A_Double_Discount,15% promo applied twice; billed at 72.25% of contract price,232145.1
+INV-100216,A_Double_Discount,15% promo applied twice; billed at 72.25% of contract price,251607.77
+INV-100875,B_Phantom_Short_Shipment,Short-shipment deduction of ~50% of invoice; fully disputable,196882.65
+INV-100829,B_Phantom_Short_Shipment,Short-shipment deduction of ~50% of invoice; fully disputable,203963.81
+INV-100429,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,26061.0
+INV-100431,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,21598.2
+INV-100432,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,13226.0
+INV-100434,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,7621.9
+INV-100436,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,16545.1
+INV-100437,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,32677.0
+INV-100440,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,8245.0
+INV-100441,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,32779.5
+INV-100444,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,6519.0
+INV-100448,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,5847.4
+INV-100452,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,12691.9
+INV-100455,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,15313.5
+INV-100456,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,14739.0
+INV-100457,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,4563.0
+INV-100458,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,10914.0
+INV-100461,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,4613.7
+INV-100462,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,6979.7
+INV-100464,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,22730.5
+INV-100465,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,20026.0
+INV-100466,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,4114.0
+INV-100467,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,8619.0
+INV-100468,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,9987.9
+INV-100469,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,22814.0
+INV-100474,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,11968.0
+INV-100478,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,18204.0
+INV-100480,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,19739.2
+INV-100481,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,16575.0
+INV-100482,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,13702.0
+INV-100483,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,27411.8
+INV-100485,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,16167.0
+INV-100486,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,9594.0
+INV-100488,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,9676.0
+INV-100489,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,5610.8
+INV-100490,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,6817.0
+INV-100496,C_Defective_Batch,AI laptop return rate ~9% vs ~2% expected,20842.0
