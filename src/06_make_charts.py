@@ -21,8 +21,8 @@ VIEWS_SQL = PROJECT_ROOT / "sql" / "02_exceptions.sql"
 OUT_PATH = PROJECT_ROOT / "docs" / "gross_to_net_waterfall.png"
 
 TOTAL_COLOR = "#3D6CB3"     # blue: totals and subtotals
-DEDUCT_COLOR = "#B23A3A"    # red: routine deductions
-LEAK_COLOR = "#E69138"      # orange: leakage found by the exception rules
+DEDUCT_COLOR = "#B23A3A"    # red: deductions
+LEAK_COLOR = DEDUCT_COLOR   # same red as other deductions, to match the dashboard chart
 INK, MUTED, GRID = "#1A1A1A", "#595959", "#E0E0E0"
 AXIS_FLOOR = 200e6          # bridge charts start above zero so deductions are visible
 
@@ -81,7 +81,7 @@ def main():
         top = bottom + height
         tops.append(running)
         ax.text(i, top + 0.35e6, money(value), ha="center", va="bottom",
-                fontsize=9.5, color=INK, fontweight="bold" if kind == "total" else "normal")
+                fontsize=9.5, color=INK)
 
     # dashed connectors between bars
     for i in range(len(steps) - 1):
@@ -100,12 +100,7 @@ def main():
     fig.suptitle("Gross-to-Net Revenue Bridge, Sep 2025 - Oct 2026", x=0.065, ha="left",
                  fontsize=14, fontweight="bold", color=INK, y=0.97)
     ax.set_title("Northwind Devices (fictional, simulated data). Axis starts at $200M so deductions are visible.",
-                 loc="left", fontsize=9, color=MUTED, pad=26)
-    handles = [plt.Rectangle((0, 0), 1, 1, color=c) for c in (TOTAL_COLOR, DEDUCT_COLOR, LEAK_COLOR)]
-    ax.legend(handles, ["Total / subtotal", "Routine deduction", "Leakage flagged by exception rules"],
-              loc="upper left", bbox_to_anchor=(0, 1.08), ncol=3, frameon=False, fontsize=9,
-              labelcolor=INK, handlelength=1.2, columnspacing=1.6)
-
+                 loc="left", fontsize=9, color=MUTED, pad=12)
     fig.tight_layout()
     fig.savefig(OUT_PATH, facecolor="white")
     print(f"Saved {OUT_PATH.relative_to(PROJECT_ROOT)}")
