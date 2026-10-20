@@ -1,6 +1,6 @@
 # Dispute email: Best Buy short-shipment deductions
 
-> **Status:** AI draft (Claude), generated from [brief_dispute_bestbuy.md](../brief_dispute_bestbuy.md). Pending human review. Do not send until the placeholders are filled.
+> **Status:** AI draft (Claude), generated from [brief_dispute_bestbuy.md](../brief_dispute_bestbuy.md). Checked against the brief. Placeholders left on purpose (portfolio example, not sent).
 
 ---
 
@@ -30,9 +30,8 @@ Deductions, Northwind Devices
 ---
 
 ### Review checklist
-- [ ] Invoice numbers, dates and amounts match the brief
-- [ ] Shipping claim confirmed against the warehouse log, or the sentence removed
-- [ ] Proof of delivery attached
-- [ ] Response date and signature filled in
-- [ ] Under 180 words
-- [ ] Reviewed by: __________ Date: __________
+- [x] Invoice numbers, dates and amounts match the brief
+- [x] Shipping claim not asserted: kept as a placeholder because there are no shipping records
+- [ ] Proof of delivery attached — *not applicable: portfolio example, not sent; placeholders left on purpose*
+- [ ] Response date and signature filled in — *not applicable: portfolio example, not sent; placeholders left on purpose*
+- [x] Under 180 words
